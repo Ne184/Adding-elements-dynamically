@@ -33,10 +33,17 @@
   </body>
   <script>
     document.body.addEventListener("click", function (){
-      messageList = document.querySelectorAll('.message');
-      messageList.forEach(message => {
-        message.style.visibility = 'visible';
-      })
+      for (let i = 0; i < 5; i++){
+          let template = document.createElement('article');
+          // let templateP = document.createElement('p');
+          template.textContent = "03 March 2018";
+          document.body.appendChild(template);
+      }
+
+      // messageList = document.querySelectorAll('.message');
+      // messageList.forEach(message => {
+      //   message.style.visibility = 'visible';
+      // })
       
     });
     </script>
