@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>HTML, CSS and SASS Boilerplate</title>
+    <title>Messages</title>
     <meta
       name="description"
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
@@ -10,9 +10,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
-    </div>
+    <article class="message">
+      <h1>Weather forecast for Seattle</h1>
+      <article class="message">
+          <h2>03 March 2018</h2>
+          <p>John sent a message.</p>
+      </article>
+      <article class="message">
+          <h2>04 March 2018</h2>
+          <p>Petra reacted with a heart.</p>
+      </article>
+      <article class="message">
+          <h2>05 March 2018</h2>
+          <p>Steven has a new post.</p>
+      </article>
+      <article class="message">
+        <h2>06 March 2018</h2>
+        <p>Vanina wants to connect with you.</p>
+    </article>
+  </article>
+  
   </body>
+  <script>
+    document.body.addEventListener("click", function (){
+      messageList = document.querySelectorAll('.message');
+      messageList.forEach(message => {
+        message.style.visibility = 'visible';
+      })
+      
+    });
+    </script>
 </html>
